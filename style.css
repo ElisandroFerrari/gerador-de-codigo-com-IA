@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: url('galaxia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e4e4e7;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 { font-size: 40px; color: #fafafa; font-weight: bold; }
+span { color: #22c55e; }
+p { color: #22c55e; margin: 10px; }
+
+textarea {
+    resize: none; width: 100%; max-width: 640px; padding: 16px;
+    border: 1px solid #16a34a; 
+    border-radius: 10px;
+    background: rgba(20, 20, 25, 0.8);
+    color: #fafafa; outline: none; margin-top: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    animation: pulsarBordaVerde 3s infinite alternate;
+}
+
+textarea:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+    animation: none;
+}
+
+button {
+    width: 100%; max-width: 640px; background: #22c55e;
+    font-size: 16px; font-weight: bold; border-radius: 10px;
+    border: none; padding: 15px; cursor: pointer; margin-top: 10px;
+    color: #09090b;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: scale(1.02);
+    background-color: #16a34a;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.7);
+}
+
+.container-flex {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+h2 { margin-bottom: 15px; font-size: 1.5rem; text-align: left; }
+
+.bloco-codigo {
+    background: rgba(20, 20, 25, 0.85); 
+    border: 1px solid #16a34a;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+    color: #34d399;
+    line-height: 1.6;
+    overflow: auto;
+    min-height: 350px;
+    white-space: pre-wrap;
+    animation: pulsarBordaVerde 3s infinite alternate;
+}
+
+.resultado-codigo {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #16a34a; 
+    border-radius: 12px;
+    background-color: #000;
+    animation: pulsarBordaVerde 3s infinite alternate;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(34, 197, 94, 0.2); 
+}
+
+.data-conclusao { color: #22c55e; font-size: 14px; }
+.divisor { color: #27272a; margin: 0 10px; }
+.marca-registrada {
+    color: #22c55e;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    letter-spacing: 1px;
+}
+
+@keyframes pulsarBordaVerde {
+    0% { border-color: #16a34a; box-shadow: 0 0 2px rgba(22, 163, 74, 0.2); }
+    100% { border-color: #34d399; box-shadow: 0 0 12px rgba(52, 211, 153, 0.5); }
+}
